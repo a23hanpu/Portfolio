@@ -97,7 +97,7 @@ a{ color: inherit; }
    Hero
 ========================================================= */
 .hero{
-  padding: 96px 0 72px;
+  padding: 72px 0 72px;
   position: relative;
   z-index: 1;
 }
