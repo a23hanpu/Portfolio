@@ -79,11 +79,11 @@
       </p>
       <h2>Gallery</h2>
       <div class="gallery">
-        <div class="gallery-tile"><img src="images/windwardmainmenu.png" alt="Windward screenshot 1"></div>
-        <div class="gallery-tile"><img src="images/windwardminigame.png" alt="Windward screenshot 2"></div>
-        <div class="gallery-tile"><img src="images/windwarddialogue.png" alt="Windward screenshot 3"></div>
-        <div class="gallery-tile"><img src="images/windwardboat.png" alt="Windward screenshot 4"></div>
-        <div class="gallery-tile"><img src="images/windwardplayer.png" alt="Windward screenshot 5"></div>
+        <div class="gallery-tile"><img src="images/windwardmainmenu.png" alt="Windward main menu"></div>
+        <div class="gallery-tile"><img src="images/windwardminigame.png" alt="Windward minigame"></div>
+        <div class="gallery-tile"><img src="images/windwarddialogue.png" alt="Windward dialogue screen"></div>
+        <div class="gallery-tile"><img src="images/windwardboat.png" alt="Windward boat gameplay"></div>
+        <div class="gallery-tile"><img src="images/windwardplayer.png" alt="Windward player gameplay"></div>
       </div>
     </div>
  
@@ -98,6 +98,16 @@
       </div>
     </aside>
   </section>
+
+  <div class="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-previous" type="button" aria-label="Previous image">&#8592;</button>
+    <figure class="lightbox-content">
+      <img class="lightbox-image" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" type="button" aria-label="Next image">&#8594;</button>
+  </div>
  
   <footer id="contact" class="site-footer">
     <div class="wrap footer-inner">
@@ -110,4 +120,5 @@
   </footer>
  
 </body>
+<script src="gallery-lightbox.js"></script>
 </html>
