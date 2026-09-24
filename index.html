@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="mark">JN</span>
+      <nav class="header-nav">
+        <a href="#work">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="hero-eyebrow">Game developer &amp; designer</p>
+      <h1 class="hero-title">I build small worlds<br>people want to get lost in.</h1>
+      <p class="hero-sub">A collection of games I've shipped, prototyped, and jammed —
+        from solo weekend builds to longer team projects. Scroll down to play, watch, or read about each one.</p>
+      <div class="hero-count">
+        <span class="count-num">06</span>
+        <span class="count-label">projects below</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="work" class="work">
+    <div class="wrap">
+
+      <!-- ================================================================
+        GAME CARD TEMPLATE
+        Duplicate a <article class="game"> block to add a new game.
+        - Swap the image src (or delete the <img> and keep .cover-fallback
+          for a placeholder tile with initials).
+        - status: "shipped", "in-progress", or "prototype" controls the
+          little tag color — matches classes in style.css (.tag--shipped etc)
+        - Replace the two <a class="btn"> links with real URLs, or delete
+          the ones you don't need (e.g. no Steam page yet).
+      ================================================================= -->
+
+      <article class="game">
+        <a class="game-cover" href="windward.html">
+          <!-- <div class="cover-fallback" style="--tile-a:#3a3f88; --tile-b:#20223f;">EG</div> -->
+          <img src="images/windward.png" alt="Windward screenshot">
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="windward.html">Windward</a></h2>
+          </div>
+          <p class="game-meta">Group Project · Unity · 2025</p>
+          <p class="game-desc">
+            A story driven game where the player uses a ship to explore different islands and help the citizens with tasks
+          </p>
+          <div class="game-tags">
+            <span>Unity</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="windward.html">View details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <a class="game-cover" href="game-rust-and-dust.html">
+          <div class="cover-fallback" style="--tile-a:#a4572f; --tile-b:#4a2416;">RD</div>
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="game-rust-and-dust.html">Rust &amp; Dust</a></h2>
+            <span class="tag tag--progress">In progress</span>
+          </div>
+          <p class="game-meta">Team of 3 · Unity · 2025–now</p>
+          <p class="game-desc">
+            A top-down salvage-and-survive game set in a sand-buried city. I'm handling
+            combat feel and enemy AI while the rest of the team covers art and systems.
+            Closed playtest coming soon.
+          </p>
+          <div class="game-tags">
+            <span>Survival</span>
+            <span>Top-down</span>
+            <span>Unity</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="game-rust-and-dust.html">View details</a>
+            <a class="btn btn--ghost" href="#">Devlog</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <a class="game-cover" href="game-paper-pilot.html">
+          <div class="cover-fallback" style="--tile-a:#2f8a6b; --tile-b:#153a2d;">PP</div>
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="game-paper-pilot.html">Paper Pilot</a></h2>
+            <span class="tag tag--shipped">Shipped</span>
+          </div>
+          <p class="game-meta">Solo project · JavaScript · 2023</p>
+          <p class="game-desc">
+            A one-button flying game made in 48 hours for a game jam. You fold and
+            unfold a paper plane mid-air to dodge wind gusts. Placed top 20 out of 400+ entries.
+          </p>
+          <div class="game-tags">
+            <span>Arcade</span>
+            <span>Game jam</span>
+            <span>HTML5</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="game-paper-pilot.html">View details</a>
+            <a class="btn btn--ghost" href="#">Play in browser</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <a class="game-cover" href="game-hollow-ledger.html">
+          <div class="cover-fallback" style="--tile-a:#b23a5c; --tile-b:#4d1a2b;">HL</div>
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="game-hollow-ledger.html">Hollow Ledger</a></h2>
+            <span class="tag tag--prototype">Prototype</span>
+          </div>
+          <p class="game-meta">Solo project · Ink + Unity · 2025</p>
+          <p class="game-desc">
+            A narrative game about a debt collector in a town where memories are the
+            currency. Currently a text-and-static-art prototype while I test the
+            branching dialogue system.
+          </p>
+          <div class="game-tags">
+            <span>Narrative</span>
+            <span>Dialogue systems</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="game-hollow-ledger.html">View details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <a class="game-cover" href="game-tidal-trade.html">
+          <div class="cover-fallback" style="--tile-a:#d6a72f; --tile-b:#5c4413;">TT</div>
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="game-tidal-trade.html">Tidal Trade</a></h2>
+            <span class="tag tag--shipped">Shipped</span>
+          </div>
+          <p class="game-meta">Team of 5 · Unity · 2022</p>
+          <p class="game-desc">
+            A cozy trading-route sim built during a university capstone. I led gameplay
+            programming for the shipping-and-weather system. Shown at our department's
+            year-end showcase.
+          </p>
+          <div class="game-tags">
+            <span>Simulation</span>
+            <span>Cozy</span>
+            <span>Team project</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="game-tidal-trade.html">View details</a>
+            <a class="btn btn--ghost" href="#">Download build</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <a class="game-cover" href="game-static-kin.html">
+          <div class="cover-fallback" style="--tile-a:#4472c4; --tile-b:#1a2c4d;">SK</div>
+        </a>
+        <div class="game-body">
+          <div class="game-heading">
+            <h2><a href="game-static-kin.html">Static Kin</a></h2>
+            <span class="tag tag--prototype">Prototype</span>
+          </div>
+          <p class="game-meta">Solo project · PICO-8 · 2024</p>
+          <p class="game-desc">
+            A tiny horror game made entirely on the PICO-8 fantasy console, about
+            tuning a radio to keep something outside your cabin calm. A one-week
+            experiment in working within hard technical limits.
+          </p>
+          <div class="game-tags">
+            <span>Horror</span>
+            <span>PICO-8</span>
+            <span>Experimental</span>
+          </div>
+          <div class="game-links">
+            <a class="btn" href="game-static-kin.html">View details</a>
+          </div>
+        </div>
+      </article>
+      <!-- END GAME CARD TEMPLATE — copy an <article class="game"> block above this line to add more, and create a matching games/your-game.html page (see game-echo-garden.html for the template) -->
+
+    </div>
+  </main>
+
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <h2>About</h2>
+      <p>
+        I'm a game developer who likes small, finishable ideas more than huge ones —
+        most of what's above started as a jam entry or a weekend experiment. Replace this
+        paragraph with a couple of lines about your background, the tools you use, and
+        what kind of games you're drawn to making.
+      </p>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Want to make something together, or just talk shop?</p>
+      <a class="btn" href="mailto:you@example.com">you@example.com</a>
+      <div class="footer-links">
+        <a href="#">itch.io</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter / X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
