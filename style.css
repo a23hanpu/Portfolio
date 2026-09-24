@@ -104,7 +104,7 @@ a{ color: inherit; }
 .hero-inner{
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
-  gap: 56px;
+  gap: 36px;
   align-items: start;
 }
 .hero-photo{
@@ -331,6 +331,7 @@ a{ color: inherit; }
   position: relative;
   z-index: 1;
 }
+.windward-detail-hero{ padding-bottom: 10px; }
 .detail-heading{
   display:flex;
   align-items: center;
@@ -458,6 +459,8 @@ a{ color: inherit; }
   margin: 40px 0 14px;
 }
 .detail-copy h2:first-child{ margin-top: 40px; }
+.windward-copy h2,
+.windward-copy h2:first-child{ margin-top: 10px; }
 .detail-copy p{
   max-width: 62ch;
   color: rgba(237,234,227,0.88);
@@ -615,6 +618,7 @@ a{ color: inherit; }
   position: relative;
   z-index: 1;
 }
+.contact-footer{ padding: 14px 0 36px; }
 .footer-inner p{
   color: var(--ink-dim);
   margin: 0 0 18px;
