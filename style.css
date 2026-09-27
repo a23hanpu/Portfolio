@@ -413,7 +413,7 @@ a{ color: inherit; }
   background: #000;
   border: 1px solid var(--line);
 }
-.performance-shot--small .performance-shot-placeholder{ aspect-ratio: 4 / 3; }
+.performance-shot--small .performance-shot-placeholder{ aspect-ratio: 16 / 9; }
 .performance-shot--small > img{ aspect-ratio: 4 / 3; }
 .performance-shot figcaption{
   margin-top: 7px;
