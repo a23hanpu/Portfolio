@@ -9,9 +9,6 @@
   --line:        #2a2c38;
   --accent:      #d6a72f;   /* amber — used sparingly */
   --accent-ink:  #12131a;
-  --shipped:     #3f9e6d;
-  --progress:    #d6a72f;
-  --prototype:   #6b7280;
  
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
   --font-body:    'Space Grotesk', 'Segoe UI', sans-serif;
@@ -75,15 +72,6 @@ a{ color: inherit; }
   justify-content: space-between;
   height: 64px;
 }
-.mark{
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  letter-spacing: 0.06em;
-  border: 1px solid var(--line);
-  padding: 4px 9px;
-  border-radius: 4px;
-  color: var(--ink-dim);
-}
 .header-nav{ display:flex; gap: 28px; }
 .header-nav a{
   text-decoration: none;
@@ -137,12 +125,6 @@ a{ color: inherit; }
 }
 .hero-photo-placeholder span{ color: var(--ink); font-size: 0.9rem; }
 .hero-photo-placeholder small{ font-size: 0.68rem; text-transform: none; }
-.hero-eyebrow{
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--accent);
-  margin: 0 0 18px;
-}
 .hero-title{
   font-family: var(--font-display);
   font-weight: 600;
@@ -157,23 +139,6 @@ a{ color: inherit; }
   color: var(--ink-dim);
   font-size: 1.05rem;
   margin: 0 0 40px;
-}
-.hero-count{
-  display:flex;
-  align-items: baseline;
-  gap: 12px;
-  border-top: 1px solid var(--line);
-  padding-top: 20px;
-  width: fit-content;
-}
-.count-num{
-  font-family: var(--font-mono);
-  font-size: 1.6rem;
-  color: var(--accent);
-}
-.count-label{
-  color: var(--ink-dim);
-  font-size: 0.9rem;
 }
  
 /* =========================================================
@@ -246,17 +211,6 @@ a{ color: inherit; }
   font-weight: 600;
   margin: 0;
 }
-.tag{
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-}
-.tag--shipped{ color: var(--shipped); border-color: rgba(63,158,109,0.4); background: rgba(63,158,109,0.08); }
-.tag--progress{ color: var(--progress); border-color: rgba(214,167,47,0.4); background: rgba(214,167,47,0.08); }
-.tag--prototype{ color: var(--prototype); border-color: rgba(107,114,128,0.5); background: rgba(107,114,128,0.1); }
- 
 .game-meta{
   font-family: var(--font-mono);
   font-size: 0.82rem;
@@ -300,12 +254,6 @@ a{ color: inherit; }
 }
 .btn:hover{ background: #e6ba46; }
 .btn:active{ transform: translateY(1px); }
-.btn--ghost{
-  background: transparent;
-  color: var(--ink);
-  border: 1px solid var(--line);
-}
-.btn--ghost:hover{ background: var(--bg-raised); }
  
 @media (max-width: 640px){
   .hero-inner{ grid-template-columns: 1fr; gap: 32px; }
@@ -371,12 +319,6 @@ a{ color: inherit; }
   padding: 4px 10px;
   border-radius: 6px;
 }
-.detail-links{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
 .performance-hero{ padding-bottom: 8px; }
 .performance-intro{
   max-width: 58ch;
@@ -446,13 +388,6 @@ a{ color: inherit; }
   background: var(--bg-raised);
   border: 1px solid var(--line);
 }
-.video-frame video,
-.video-frame iframe{
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 0;
-}
 .image-collage img{
   position: absolute;
   inset: 0;
@@ -476,32 +411,6 @@ a{ color: inherit; }
   .image-collage img{ animation: none; opacity: 0; }
   .image-collage img:first-child{ opacity: 1; }
 }
-.video-fallback{
-  position: absolute;
-  inset: 0;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  gap: 10px;
-  font-family: var(--font-mono);
-  color: var(--ink-dim);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 0 24px;
-}
-.video-fallback .play-glyph{
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size: 1rem;
-  color: var(--ink);
-}
- 
 /* long-form body */
 .detail-body{
   padding: 8px 0 64px;
@@ -526,13 +435,6 @@ a{ color: inherit; }
   color: rgba(237,234,227,0.88);
   margin: 0 0 16px;
 }
-.detail-copy ul{
-  margin: 0 0 16px;
-  padding-left: 20px;
-  color: rgba(237,234,227,0.88);
-}
-.detail-copy li{ margin-bottom: 8px; }
- 
 .detail-side{
   border-left: 1px solid var(--line);
   padding-left: 32px;
@@ -651,25 +553,6 @@ a{ color: inherit; }
 }
  
 /* =========================================================
-   About
-========================================================= */
-.about{
-  border-top: 1px solid var(--line);
-  padding: 64px 0;
-  position: relative;
-  z-index: 1;
-}
-.about h2{
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  margin: 0 0 16px;
-}
-.about p{
-  max-width: 62ch;
-  color: rgba(237,234,227,0.88);
-}
- 
-/* =========================================================
    Footer
 ========================================================= */
 .site-footer{
@@ -679,11 +562,6 @@ a{ color: inherit; }
   z-index: 1;
 }
 .contact-footer{ padding: 14px 0 36px; }
-.footer-inner p{
-  color: var(--ink-dim);
-  margin: 0 0 18px;
-  font-size: 1.05rem;
-}
 .footer-links{
   display:flex;
   gap: 20px;
