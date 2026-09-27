@@ -405,6 +405,14 @@ a{ color: inherit; }
   object-position: center;
   border: 1px solid var(--line);
 }
+.performance-shot > video{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+  border: 1px solid var(--line);
+}
 .performance-shot--small .performance-shot-placeholder{ aspect-ratio: 4 / 3; }
 .performance-shot--small > img{ aspect-ratio: 4 / 3; }
 .performance-shot figcaption{
