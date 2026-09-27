@@ -291,6 +291,8 @@ a{ color: inherit; }
   position: relative;
   z-index: 1;
 }
+.chempunk-detail-hero{ padding-bottom: 27px; }
+.chempunk-detail-hero .detail-meta{ margin-bottom: 7px; }
 .windward-detail-hero{ padding-bottom: 10px; }
 .detail-heading{
   display:flex;
@@ -467,21 +469,39 @@ a{ color: inherit; }
   background: var(--bg-raised);
   border: 1px solid var(--line);
 }
-.media-placeholder{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: linear-gradient(145deg, #29251f, #191b24 70%);
+.chempunk-media{
+  padding: 2px 0 56px;
+  position: relative;
+  z-index: 1;
+}
+.chempunk-feature,
+.chempunk-gif{ min-width: 0; margin: 0; }
+.chempunk-feature{ margin-bottom: 28px; }
+.chempunk-media-image{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+  background-color: #211e1b;
+  object-fit: cover;
+}
+.chempunk-feature-image{ aspect-ratio: 16 / 8; }
+.chempunk-feature figcaption,
+.chempunk-gif figcaption{
+  margin-top: 8px;
   color: var(--ink-dim);
   font-family: var(--font-mono);
+  font-size: 0.72rem;
 }
-.media-placeholder span{
-  color: var(--ink);
-  font-size: clamp(1rem, 4vw, 1.6rem);
+.chempunk-gif-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
-.media-placeholder small{ font-size: 0.75rem; }
+@media (max-width: 640px){
+  .chempunk-gif-grid{ grid-template-columns: 1fr; }
+}
 .image-collage img{
   position: absolute;
   inset: 0;
