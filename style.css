@@ -227,6 +227,12 @@ a{ color: inherit; }
   color: rgba(237,234,227,0.85);
   background: linear-gradient(155deg, var(--tile-a, #333) 0%, var(--tile-b, #111) 100%);
 }
+.performance-cover .cover-fallback{
+  --tile-a: #315d58;
+  --tile-b: #172320;
+  font-size: 1.05rem;
+  color: #dce8d9;
+}
  
 .game-heading{
   display:flex;
@@ -369,6 +375,60 @@ a{ color: inherit; }
   display:flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.performance-hero{ padding-bottom: 8px; }
+.performance-intro{
+  max-width: 58ch;
+  color: var(--ink-dim);
+  margin: 0 0 24px;
+}
+.performance-projects{
+  padding-bottom: 64px;
+  position: relative;
+  z-index: 1;
+}
+.performance-project{
+  padding: 28px 0 32px;
+  border-top: 1px solid var(--line);
+}
+.performance-project:last-child{ border-bottom: 1px solid var(--line); }
+.performance-number{
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.performance-project h2{
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.performance-placeholder{
+  max-width: 62ch;
+  color: rgba(237,234,227,0.72);
+  margin: 0 0 22px;
+}
+.performance-details{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+}
+.performance-details dt{
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink-dim);
+  margin-bottom: 6px;
+}
+.performance-details dd{
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(237,234,227,0.88);
+}
+@media (max-width: 640px){
+  .performance-details{ grid-template-columns: 1fr; gap: 16px; }
 }
  
 /* video */
