@@ -293,6 +293,8 @@ a{ color: inherit; }
 }
 .chempunk-detail-hero{ padding-bottom: 27px; }
 .chempunk-detail-hero .detail-meta{ margin-bottom: 7px; }
+.chempunk-page .wrap{ padding-left: 28px; padding-right: 28px; }
+.windward-page .wrap{ padding-left: 28px; padding-right: 28px; }
 .windward-detail-hero{ padding-bottom: 10px; }
 .detail-heading{
   display:flex;
@@ -535,7 +537,18 @@ a{ color: inherit; }
   gap: 56px;
   border-top: 1px solid var(--line);
 }
-.chempunk-body{ grid-template-columns: 1fr; }
+.chempunk-body{
+  grid-template-columns: 1fr;
+  border-top: none;
+}
+.chempunk-body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 28px;
+  border-top: 1px solid var(--line);
+}
 .detail-copy h2{
   font-family: var(--font-display);
   font-size: 1.3rem;
