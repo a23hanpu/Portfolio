@@ -368,6 +368,7 @@ a{ color: inherit; }
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  container-type: inline-size;
 }
 .performance-shot{ min-width: 0; margin: 0; }
 .performance-shot--featured{ grid-column: 1 / -1; }
@@ -428,6 +429,16 @@ a{ color: inherit; }
   aspect-ratio: auto;
   object-fit: initial;
   background: transparent;
+}
+.performance-shot--shell-sort > img{
+  width: auto;
+  height: calc((100cqw - 12px) / 2.472);
+  margin-inline: 0;
+}
+.performance-shot--merge-sort > img{
+  width: auto;
+  height: calc((100cqw - 12px) / 2.472);
+  margin-left: calc(-17.44cqw + 2px);
 }
 .performance-shot figcaption{
   margin-top: 7px;
