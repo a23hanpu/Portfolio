@@ -85,15 +85,19 @@ a{ color: inherit; }
    Hero
 ========================================================= */
 .hero{
-  padding: 72px 0 72px;
+  padding: 48px 0 16px;
   position: relative;
   z-index: 1;
 }
 .hero-inner{
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 42%) minmax(0, 1fr);
   gap: 36px;
-  align-items: start;
+  align-items: stretch;
+}
+.hero-copy{
+  display: flex;
+  flex-direction: column;
 }
 .hero-photo{
   width: 100%;
@@ -130,16 +134,16 @@ a{ color: inherit; }
   font-weight: 600;
   font-size: clamp(2.1rem, 5vw, 3.4rem);
   line-height: 1.12;
-  margin: 0 0 22px;
+  margin: -8px 0 12px;
   max-width: 14ch;
   letter-spacing: -0.01em;
 }
 .hero-sub{
-  max-width: 54ch;
   color: var(--ink-dim);
-  font-size: 1.05rem;
-  margin: 0 0 40px;
+  font-size: 0.9rem;
+  margin: 0 0 16px;
 }
+.hero-sub:last-child{ margin: auto 0 0; }
  
 /* =========================================================
    Work / game cards
@@ -264,6 +268,7 @@ a{ color: inherit; }
 @media (max-width: 640px){
   .hero-inner{ grid-template-columns: 1fr; gap: 32px; }
   .hero-photo{ max-width: 220px; }
+  .hero-sub{ font-size: 1.05rem; }
   .game{ grid-template-columns: 1fr; }
   .game-cover{ aspect-ratio: 16 / 9; }
 }
