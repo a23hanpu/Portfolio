@@ -98,6 +98,7 @@ a{ color: inherit; }
 .hero-copy{
   display: flex;
   flex-direction: column;
+  row-gap: 12px;
 }
 .hero-photo{
   width: 100%;
@@ -134,16 +135,16 @@ a{ color: inherit; }
   font-weight: 600;
   font-size: clamp(2.1rem, 5vw, 3.4rem);
   line-height: 1.12;
-  margin: -8px 0 12px;
+  margin: -8px 0 0;
   max-width: 14ch;
   letter-spacing: -0.01em;
 }
 .hero-sub{
   color: var(--ink-dim);
   font-size: 0.9rem;
-  margin: 0 0 16px;
+  margin: 0;
 }
-.hero-sub:last-child{ margin: auto 0 0; }
+.hero-sub:not(:last-child){ margin-bottom: auto; }
  
 /* =========================================================
    Work / game cards
