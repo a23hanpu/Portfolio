@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unity Performance Projects — Portfolio</title>
+<title>Unity Learning Projects — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -28,44 +28,40 @@
   </div>
 
   <main>
-    <section class="detail-hero performance-hero wrap">
+    <section class="detail-hero learning-hero wrap">
       <div class="detail-heading">
-        <h1>Unity Performance Projects</h1>
+        <h1>Unity Learning Projects</h1>
       </div>
-      <p class="performance-intro">
-        A collection of Unity projects focused on understanding and improving runtime performance.
+      <p class="learning-intro">
+        A collection of small Unity projects I made to explore different programming concepts and learn how they work in practice.
       </p>
-      <div class="detail-tags">
-        <span>Unity</span>
-        <span>Performance</span>
-      </div>
     </section>
 
-    <section class="performance-projects wrap" aria-label="Performance projects">
-      <article class="performance-project">
-        <header class="performance-project-heading">
+    <section class="learning-projects wrap" aria-label="Small learning projects">
+      <article class="learning-project">
+        <header class="learning-project-heading">
           <div>
-            <p class="performance-number">PROJECT 01</p>
+            <p class="learning-number">PROJECT 01</p>
             <h2>DOTS vs Standard Unity Performance Comparison</h2>
           </div>
         </header>
-        <div class="performance-project-layout">
-          <div class="performance-gallery" aria-label="Project 1 videos">
-            <figure class="performance-shot performance-shot--featured">
+        <div class="learning-project-layout">
+          <div class="learning-gallery" aria-label="Project 1 videos">
+            <figure class="learning-shot learning-shot--featured">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 1 main video">
                 <source src="images/NormalUnityDOTSProject.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
               <figcaption>Standard Unity</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small">
+            <figure class="learning-shot learning-shot--small">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 1 additional video 1">
                 <source src="images/DOTSProjectMultithread.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
               <figcaption>Unity with multithreading</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small">
+            <figure class="learning-shot learning-shot--small">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 1 additional video 2">
                 <source src="images/DOTSProjectDOTS.mp4" type="video/mp4">
                 Your browser does not support video playback.
@@ -73,15 +69,15 @@
               <figcaption>Unity with DOTS</figcaption>
             </figure>
           </div>
-          <div class="performance-story">
-            <p class="performance-summary">
+          <div class="learning-story">
+            <p class="learning-summary">
               In this project, I compared the performance of Standard Unity, Unity with multithreading, and Unity with DOTS (Data-Oriented Technology Stack).
             </p>
-            <p class="performance-summary">
+            <p class="learning-summary">
               To make this comparison I created a scene with 2D spheres that bounce around the screen and used PairDetection to check for collision, 
               and when they collided with each other I colored them red.
             </p>
-            <section class="performance-story-block">
+            <section class="learning-story-block">
               <h3>Results</h3>
               <p>The results were logged into a CSV file for analysis but you can also see the clear difference in performance in the videos attached.</p>
             </section>
@@ -90,30 +86,30 @@
       </article>
 
 
-      <article class="performance-project">
-        <header class="performance-project-heading">
+      <article class="learning-project">
+        <header class="learning-project-heading">
           <div>
-            <p class="performance-number">PROJECT 02</p>
+            <p class="learning-number">PROJECT 02</p>
             <h2>Collision Algorithm Comparisons</h2>
           </div>
         </header>
-        <div class="performance-project-layout">
-          <div class="performance-gallery" aria-label="Project 2 videos">
-            <figure class="performance-shot performance-shot--featured">
+        <div class="learning-project-layout">
+          <div class="learning-gallery" aria-label="Project 2 videos">
+            <figure class="learning-shot learning-shot--featured">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 2 main video">
                 <source src="images/PairDetectionExample.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
               <figcaption>Pair Detection</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small">
+            <figure class="learning-shot learning-shot--small">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 2 additional video 1">
                 <source src="images/PairBoundDetectionExample.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
               <figcaption>Pair Bound Detection</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small">
+            <figure class="learning-shot learning-shot--small">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 2 additional video 2">
                 <source src="images/QuadPairDetectionExample.mp4" type="video/mp4">
                 Your browser does not support video playback.
@@ -121,52 +117,89 @@
               <figcaption>Quad Pair Detection</figcaption>
             </figure>
           </div>
-          <div class="performance-story">
-            <p class="performance-summary">Much like the previous project here I focus on comparing ways to detect collisions but here I instead used different algorithms to see
+          <div class="learning-story">
+            <p class="learning-summary">Much like the previous project here I focus on comparing ways to detect collisions but here I instead used different algorithms to see
               which one was the most efficient.
             </p>
-            <p class="performance-summary">Describe the setup, tools, and approach used to investigate it.</p>
-            <section class="performance-story-block">
+            <p class="learning-summary">Describe the setup, tools, and approach used to investigate it.</p>
+            <section class="learning-story-block">
               <h3>Results</h3>
-              <p>Share measured results, comparisons, or what you learned.</p>
+              <p>Here the results were logged to a CSV file as well and it was clear that Pair Detection using a Quadtree was the most efficient.</p>
             </section>
           </div>
         </div>
       </article>
 
-      <article class="performance-project">
-        <header class="performance-project-heading">
+      <article class="learning-project">
+        <header class="learning-project-heading">
           <div>
-            <p class="performance-number">PROJECT 03</p>
-            <h2>Sorting</h2>
+            <p class="learning-number">PROJECT 03</p>
+            <h2>Sorting Algorithm Comparisons</h2>
           </div>
         </header>
-        <div class="performance-project-layout">
-          <div class="performance-gallery" aria-label="Project 3 videos">
-            <figure class="performance-shot performance-shot--featured">
+        <div class="learning-project-layout">
+          <div class="learning-gallery" aria-label="Project 3 videos">
+            <figure class="learning-shot learning-shot--featured">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 3 main video">
                 <source src="images/SortingExample.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
-              <figcaption>Main project video</figcaption>
+              <figcaption>Example video of the visualization of the sorting algorithms in action</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small performance-shot--shell-sort">
+            <figure class="learning-shot learning-shot--small learning-shot--shell-sort">
               <img src="images/ShellSortAlgorithm.gif" alt="Shell sort algorithm demonstration">
               <figcaption>Shell sort algorithm</figcaption>
             </figure>
-            <figure class="performance-shot performance-shot--small performance-shot--merge-sort">
+            <figure class="learning-shot learning-shot--small learning-shot--merge-sort">
               <img src="images/MergeSortAlgorithm.gif" alt="Merge sort algorithm demonstration">
               <figcaption>Merge sort algorithm</figcaption>
             </figure>
           </div>
-          <div class="performance-story">
-            <p class="performance-summary">In this projhect I compared different sorting algorithms performance in Unity. This project used InsertSort, MergeSort and ShellSort.
-              
+          <div class="learning-story">
+            <p class="learning-summary">In this project I compared different sorting algorithms performance in Unity. This project used InsertSort, MergeSort and ShellSort.
             </p>
-            <p class="performance-summary">To visualize the sorting I created a 2D scene where spheres bounce around the screen and the half closest to the middle are colored gray
+            <p class="learning-summary">To visualize the sorting I created a 2D scene where spheres bounce around the screen and the half closest to the middle are colored gray
                and the others are colored white.
             </p>
-            <section class="performance-story-block">
+            <section class="learning-story-block">
+              <h3>Results</h3>
+              <p>The results were logged in a CSV file for analysis but the overall results were that ShellSort was the most efficient when you got to a large dataset.</p>
+            </section>
+          </div>
+        </div>
+      </article>
+      <article class="learning-project">
+        <header class="learning-project-heading">
+          <div>
+            <p class="learning-number">PROJECT 04</p>
+            <h2>AI Steering Behaviors</h2>
+          </div>
+        </header>
+        <div class="learning-project-layout">
+          <div class="learning-gallery" aria-label="Project 4 videos">
+            <figure class="learning-shot learning-shot--featured">
+              <video autoplay loop muted playsinline preload="metadata" aria-label="Project 4 main video">
+                <source src="" type="video/mp4">
+                Your browser does not support video playback.
+              </video>
+              <figcaption>Example video of the AI steering behaviors in action</figcaption>
+            </figure>
+            <figure class="learning-shot learning-shot--small learning-shot--shell-sort">
+              <img src="" alt="Shell sort algorithm demonstration">
+              <figcaption>Shell sort algorithm</figcaption>
+            </figure>
+            <figure class="learning-shot learning-shot--small learning-shot--merge-sort">
+              <img src="" alt="Merge sort algorithm demonstration">
+              <figcaption>Merge sort algorithm</figcaption>
+            </figure>
+          </div>
+          <div class="learning-story">
+            <p class="learning-summary">In this project I compared different sorting algorithms performance in Unity. This project used InsertSort, MergeSort and ShellSort.
+            </p>
+            <p class="learning-summary">To visualize the sorting I created a 2D scene where spheres bounce around the screen and the half closest to the middle are colored gray
+               and the others are colored white.
+            </p>
+            <section class="learning-story-block">
               <h3>Results</h3>
               <p>The results were logged in a CSV file for analysis but the overall results were that ShellSort was the most efficient when you got to a large dataset.</p>
             </section>
