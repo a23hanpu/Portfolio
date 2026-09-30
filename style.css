@@ -711,6 +711,7 @@ a{ color: inherit; }
   z-index: 1;
 }
 .contact-footer{ padding: 14px 0 36px; }
+.contact-footer h2{ margin-top: 0; }
 .footer-links{
   display:flex;
   gap: 20px;
