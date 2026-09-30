@@ -376,6 +376,9 @@ a{ color: inherit; }
   gap: 12px;
   container-type: inline-size;
 }
+.learning-project--steering .learning-gallery{
+  grid-template-columns: 1fr;
+}
 .learning-shot{ min-width: 0; margin: 0; }
 .learning-shot--featured{ grid-column: 1 / -1; }
 .learning-shot-placeholder{
@@ -430,6 +433,15 @@ a{ color: inherit; }
   background: #000;
   border: 1px solid var(--line);
 }
+.learning-shot--steering{
+  overflow: hidden;
+}
+.learning-shot--steering > video{
+  aspect-ratio: 16 / 13.5;
+  object-fit: cover;
+  transform: scale(1.25);
+  transform-origin: center;
+}
 .learning-shot--small .learning-shot-placeholder{ aspect-ratio: 16 / 9; }
 .learning-shot--small > img{
   aspect-ratio: auto;
@@ -452,7 +464,13 @@ a{ color: inherit; }
   font-size: 0.7rem;
   color: var(--ink-dim);
 }
-.learning-story{ display: grid; gap: 18px; }
+.learning-story{
+  display: grid;
+  gap: 18px;
+  align-self: start;
+  margin-top: -4px;
+}
+.learning-story > :first-child{ margin-top: 0; }
 .learning-summary{
   margin: 0;
   font-size: 1.02rem;

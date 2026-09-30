@@ -77,10 +77,6 @@
               To make this comparison I created a scene with 2D spheres that bounce around the screen and used PairDetection to check for collision, 
               and when they collided with each other I colored them red.
             </p>
-            <section class="learning-story-block">
-              <h3>Results</h3>
-              <p>The results were logged into a CSV file for analysis but you can also see the clear difference in performance in the videos attached.</p>
-            </section>
           </div>
         </div>
       </article>
@@ -168,7 +164,7 @@
           </div>
         </div>
       </article>
-      <article class="learning-project">
+      <article class="learning-project learning-project--steering">
         <header class="learning-project-heading">
           <div>
             <p class="learning-number">PROJECT 04</p>
@@ -177,31 +173,27 @@
         </header>
         <div class="learning-project-layout">
           <div class="learning-gallery" aria-label="Project 4 videos">
-            <figure class="learning-shot learning-shot--featured">
+            <figure class="learning-shot learning-shot--featured learning-shot--steering">
               <video autoplay loop muted playsinline preload="metadata" aria-label="Project 4 main video">
-                <source src="" type="video/mp4">
+                <source src="images/SteeringExample.mp4" type="video/mp4">
                 Your browser does not support video playback.
               </video>
               <figcaption>Example video of the AI steering behaviors in action</figcaption>
             </figure>
-            <figure class="learning-shot learning-shot--small learning-shot--shell-sort">
-              <img src="" alt="Shell sort algorithm demonstration">
-              <figcaption>Shell sort algorithm</figcaption>
-            </figure>
-            <figure class="learning-shot learning-shot--small learning-shot--merge-sort">
-              <img src="" alt="Merge sort algorithm demonstration">
-              <figcaption>Merge sort algorithm</figcaption>
-            </figure>
           </div>
           <div class="learning-story">
-            <p class="learning-summary">In this project I compared different sorting algorithms performance in Unity. This project used InsertSort, MergeSort and ShellSort.
+            <p class="learning-summary">In this project I impelemented an AI group steering behaviour where 
+              you steer a group of fish that grow larger when you eat food as you also have to dodge bostacles.
             </p>
-            <p class="learning-summary">To visualize the sorting I created a 2D scene where spheres bounce around the screen and the half closest to the middle are colored gray
-               and the others are colored white.
+            <p class="learning-summary">To visualize the behavior, I created a 2D scene where a group of fish move together, avoid obstacles, and react to food.
+            </p>
+            <p>
+              The fish behaviour was implemented by hjaving multiple factors taken into account: Spacing that keeps agents apart, Grouping that keeps the agents in a group, 
+              and Avoidance that makes the agents avoid obstacles.
             </p>
             <section class="learning-story-block">
               <h3>Results</h3>
-              <p>The results were logged in a CSV file for analysis but the overall results were that ShellSort was the most efficient when you got to a large dataset.</p>
+              <p>This project helped me understand how individual steering behaviors can be combined to create coordinated group movement.</p>
             </section>
           </div>
         </div>
