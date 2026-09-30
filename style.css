@@ -80,6 +80,27 @@ a{ color: inherit; }
   transition: color 0.15s ease;
 }
 .header-nav a:hover{ color: var(--ink); }
+.language-switcher{
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+  padding-left: 20px;
+}
+.language-switcher button{
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 4px 7px;
+  background: transparent;
+  color: var(--ink-dim);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+.language-switcher button:hover,
+.language-switcher button.is-active{
+  border-color: var(--line);
+  color: var(--ink);
+}
  
 /* =========================================================
    Hero
