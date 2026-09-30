@@ -13,11 +13,11 @@ const siteTranslations = {
     '.hero-title': ['About me', 'Om mig'],
     '.hero-sub:nth-of-type(1)': [
       'My name is Hannes, I am 24 years old and I’m from Norrtälje, Sweden. I recently finished my last year at the University of Skövde as a Game Programming student with a Bachelor of Science degree, majoring in Informatics.',
-      'Jag heter Hannes, är 24 år och kommer från Norrtälje. Jag har nyligen avslutat mitt sista år vid Högskolan i Skövde som spelprogrammeringsstudent med en kandidatexamen i informatik.'
+      'Jag heter Hannes, jag är 24 år och kommer från Norrtälje. Jag har nyligen gått klart mitt sista år vid Högskolan i Skövde som spelprogrammeringsstudent med en filosofie kandidatexamen i informationsteknologi.'
     ],
     '.hero-sub:nth-of-type(2)': [
       'During my time as a student at the University of Skövde I have worked mainly with Unity. I enjoy pretty much all kinds of programming but the one thing I enjoy the most as of late is the gameplay aspect. Iterating over a prototype and improving and adding features is some of the most fun I’ve had programming. I have also dabbled in very different areas of programming such as AI behaviour, networking, performance and accessibility. I also have expereince with Python and Java where I mainly solved/simulated math problems.',
-      'Under min tid som student vid Högskolan i Skövde har jag främst arbetat med Unity. Jag tycker om de flesta typer av programmering, men på senare tid har gameplay varit det jag uppskattat mest. Att iterera på en prototyp och förbättra och lägga till funktioner är bland det roligaste jag har gjort inom programmering. Jag har även arbetat med områden som AI-beteenden, nätverk, prestanda och tillgänglighet. Jag har också erfarenhet av Python och Java, främst för att lösa och simulera matematiska problem.'
+      'Under min tid som student vid Högskolan i Skövde har jag främst arbetat med Unity. Jag gillar in princip alla typer av programmering, men på senare tid har gameplay aspekten varit något jag uppskattat mycket. Att iterera på en prototyp och förbättra och lägga till fler funktioner är bland det roligaste jag har gjort inom programmering. Jag har även arbetat med områden som AI-beteenden, nätverk, prestanda och tillgänglighet. Jag har också erfarenhet av Python och Java, där jag främst löst/simulerat matte problem.'
     ],
     '.hero-sub:nth-of-type(3)': [
       'I am currently looking for a job or internship as a programmer and I am open to all kinds of opportunities!',

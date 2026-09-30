@@ -597,6 +597,17 @@ a{ color: inherit; }
   gap: 56px;
   border-top: 1px solid var(--line);
 }
+.windward-page .detail-body{
+  border-top: none;
+}
+.windward-page .detail-body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 28px;
+  border-top: 1px solid var(--line);
+}
 .chempunk-body{
   grid-template-columns: 1fr 240px;
   border-top: none;
