@@ -297,7 +297,7 @@ a{ color: inherit; }
   position: relative;
   z-index: 1;
 }
-.chempunk-detail-hero{ padding-bottom: 27px; }
+.chempunk-detail-hero{ padding-bottom: 10px; }
 .chempunk-detail-hero .detail-meta{ margin-bottom: 7px; }
 .chempunk-page .wrap{ padding-left: 28px; padding-right: 28px; }
 .windward-page .wrap{ padding-left: 28px; padding-right: 28px; }
@@ -559,7 +559,7 @@ a{ color: inherit; }
   border-top: 1px solid var(--line);
 }
 .chempunk-body{
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 240px;
   border-top: none;
 }
 .chempunk-body::before{
@@ -577,6 +577,8 @@ a{ color: inherit; }
   margin: 40px 0 14px;
 }
 .detail-copy h2:first-child{ margin-top: 40px; }
+.chempunk-body .detail-copy h2,
+.chempunk-body .detail-copy h2:first-child{ margin-top: 10px; }
 .windward-copy h2,
 .windward-copy h2:first-child{ margin-top: 10px; }
 .detail-copy p{
@@ -584,6 +586,7 @@ a{ color: inherit; }
   color: rgba(237,234,227,0.88);
   margin: 0 0 16px;
 }
+.chempunk-body .detail-copy p:last-child{ margin-bottom: 0; }
 .detail-side{
   border-left: 1px solid var(--line);
   padding-left: 32px;
