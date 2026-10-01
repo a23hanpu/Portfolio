@@ -4,7 +4,7 @@
   const languageStorageKey = 'portfolio-language';
   const originalText = new WeakMap();
   const pageTitles = {
-    index: ['Games - Portfolio', 'Spel - Portfolio'],
+    index: ['Portfolio', 'Portfolio'],
     chempunk: ['Chempunk - Portfolio', 'Chempunk — Portfolio'],
     windward: ['Windward - Games Portfolio', 'Windward — Portfolio'],
     performance: ['Unity Projects - Portfolio', 'Unity Projekt - Portfolio']
