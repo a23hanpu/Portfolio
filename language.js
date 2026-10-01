@@ -4,10 +4,10 @@
   const languageStorageKey = 'portfolio-language';
   const originalText = new WeakMap();
   const pageTitles = {
-    index: ['Games — Portfolio', 'Spel — Portfolio'],
-    chempunk: ['Chempunk — Games Portfolio', 'Chempunk — Spelportfolio'],
-    windward: ['Windward — Games Portfolio', 'Windward — Spelportfolio'],
-    performance: ['Unity Learning Projects — Portfolio', 'Unitys lärandeprojekt — Portfolio']
+    index: ['Games - Portfolio', 'Spel - Portfolio'],
+    chempunk: ['Chempunk - Portfolio', 'Chempunk — Portfolio'],
+    windward: ['Windward - Games Portfolio', 'Windward — Portfolio'],
+    performance: ['Unity Projects - Portfolio', 'Unity Projekt - Portfolio']
   };
 
   function setText(element, value) {
